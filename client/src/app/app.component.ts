@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { IUser } from "./_models/user";
 import { AccountService } from "./_services/account.service";

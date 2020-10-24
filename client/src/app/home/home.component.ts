@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { AccountService } from "../_services/account.service";
 
 @Component({
   selector: 'app-home',
@@ -10,7 +11,7 @@ export class HomeComponent implements OnInit {
   registerMode = false;
   users: any;
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public accountService: AccountService) { }
 
   ngOnInit(): void {
     this.getUsers();
@@ -25,7 +26,6 @@ export class HomeComponent implements OnInit {
   }
 
   cancelRegisterMode(event: boolean) {
-    console.log('cancel');
     this.registerMode=event;
   }
 
