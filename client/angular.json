@@ -24,6 +24,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -64,7 +66,7 @@
           "options": {
             "sslKey": "./ssl/server.key",
             "sslCert": "./ssl/server.crt",
-            "ssl":  true, 
+            "ssl": true,
             "browserTarget": "client:build"
           },
           "configurations": {
@@ -91,8 +93,11 @@
               "src/assets"
             ],
             "styles": [
-			  "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-			  "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "./node_modules/bootswatch/dist/minty/bootstrap.css",
+              "./node_modules/font-awesome/css/font-awesome.css",
+              "./node_modules/ngx-toasts.css",
               "src/styles.css"
             ],
             "scripts": []
